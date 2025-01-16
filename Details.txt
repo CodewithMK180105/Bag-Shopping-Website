@@ -1,0 +1,19 @@
+UserModel: 
+    --------> Full Name ==> String
+    --------> email ==> String
+    --------> password ==> String
+    --------> cart ==> Array
+    --------> isAdmin ==> Boolean
+    --------> orders ==> Array
+    --------> Contact ==> Number
+    --------> Picture ==> db
+
+
+ProductModel:
+    --------> Image
+    --------> Name ==> String
+    --------> Price ==> Number
+    --------> Discount ==>
+    --------> bgColor ==> String
+    --------> panelColor ==> String
+    --------> textColor ==> String

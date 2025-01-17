@@ -6,7 +6,7 @@ UserModel:
     --------> isAdmin ==> Boolean
     --------> orders ==> Array
     --------> Contact ==> Number
-    --------> Picture ==> db
+    --------> Picture ==> String
 
 
 ProductModel:

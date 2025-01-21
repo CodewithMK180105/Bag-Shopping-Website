@@ -3,10 +3,19 @@ UserModel:
     --------> email ==> String
     --------> password ==> String
     --------> cart ==> Array
-    --------> isAdmin ==> Boolean
     --------> orders ==> Array
     --------> Contact ==> Number
     --------> Picture ==> String
+
+
+OwnerModel: 
+    --------> Full Name ==> String
+    --------> email ==> String
+    --------> password ==> String
+    --------> isAdmin ==> Boolean
+    --------> products ==> Array
+    --------> Picture ==> String
+    --------> gstin ==> String
 
 
 ProductModel:
@@ -17,3 +26,11 @@ ProductModel:
     --------> bgColor ==> String
     --------> panelColor ==> String
     --------> textColor ==> String
+
+
+"/" ===> signup or login
+"/shop" ===> shop
+"/user/cart" ===> cart
+"/admin" ===> admin panel
+"/owner/products" ===> show all the products
+"owner/admin" ===> show admin panel to create products

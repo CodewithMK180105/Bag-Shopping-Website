@@ -1,0 +1,44 @@
+<%- include('./partials/header') %>
+
+<body class="bg-gray-50 text-gray-800 min-h-screen font-sans">
+
+    <!-- Main Profile Section -->
+    <main class="max-w-4xl mx-auto py-10 px-6 space-y-10">
+      
+      <!-- Profile Picture and Name -->
+      <section class="flex flex-col items-center space-y-4">
+        <div class="w-36 h-36 rounded-full overflow-hidden shadow-md hover-shadow">
+        </div>
+        <h1 class="text-3xl font-bold text-gray-900"><%= user.fullname %></h1>
+        <p class="text-gray-600 text-lg"><%= user.email %></p>
+      </section>
+  
+      <!-- Contact Information -->
+      <section class="bg-white rounded-xl shadow-md p-6 space-y-4 hover-shadow">
+        <h2 class="text-2xl font-semibold text-gray-800">Contact Information</h2>
+        <p class="text-lg">
+          <span class="font-medium text-gray-700">Phone:</span> <%= user.contact %>
+        </p>
+      </section>
+  
+      <!-- Actions Section -->
+      <section class="flex justify-center space-x-6">
+        <button 
+          class="bg-blue-500 text-white font-medium py-2 px-6 rounded-lg hover:bg-blue-600 transition">
+          Edit Profile
+        </button>
+        <button 
+          class="bg-gray-200 text-gray-700 font-medium py-2 px-6 rounded-lg hover:bg-gray-300 transition">
+          Change Password
+        </button>
+      </section>
+    </main>
+  
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-gray-100 text-gray-500">
+      <p>&copy; 2025 My Profile App. All rights reserved.</p>
+    </footer>
+  
+  </body>
+
+<%- include('./partials/footer') %>
